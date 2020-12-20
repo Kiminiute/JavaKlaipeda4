@@ -1,4 +1,4 @@
-package basics.tdd.NamuDarbai_2.Deliveries;
+package namu_Darbai.Deliveries;
 
 public enum GadgetType {
      PHONE,

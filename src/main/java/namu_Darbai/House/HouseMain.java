@@ -1,4 +1,4 @@
-package basics.tdd.NamuDarbai;
+package namu_Darbai.House;
 
 public class HouseMain {
 

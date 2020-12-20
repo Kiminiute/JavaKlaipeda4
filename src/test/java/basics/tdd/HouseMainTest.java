@@ -1,11 +1,5 @@
 package basics.tdd;
 
-import basics.tdd.NamuDarbai.House;
-import basics.tdd.NamuDarbai.HouseMain;
-import org.assertj.core.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-
 //public class HouseMainTest {
 
 

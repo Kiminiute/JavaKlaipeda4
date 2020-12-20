@@ -1,6 +1,5 @@
-package basics.tdd.NamuDarbai_2.Deliveries;
-
-import static basics.tdd.NamuDarbai_2.Deliveries.GadgetType.*;
+package namu_Darbai.Deliveries;
+import static namu_Darbai.Deliveries.GadgetType.*;
 
 
 public class Deliveries_Main {
@@ -11,14 +10,19 @@ public class Deliveries_Main {
         Person person2 = new Person("Antanas", "Sausio g.178", LAPTOP ,  2021-3-18);
         Person person3 = new Person("Petras", "Molo g.87", TV , 2021-9-8);
 
-        Gadget gadget1 = new Gadget(2000, PHONE,"Telia");
-        Gadget gadget2 = new Gadget(4090, LAPTOP,"Bite");
+        Courier courier1 = new Courier("DPD","Klaipeda",2020-12-28);
+        Courier courier2 = new Courier("LTPastas","Vilnius",2021-01-28);
+        Courier courier3 = new Courier("Omniva","Klaipeda",2021-02-14);
+
+
+        Gadget gadget1 = new Gadget(2000, PHONE, courier1);
+        Gadget gadget2 = new Gadget(4090, LAPTOP,courier2);
         Gadget gadget3 = new Gadget(570, TV, "Tele2");
         Gadget []gadgets = new Gadget[3];
 
-//        Company company1 = new Company("Telia","Klaipeda", PERSONAL_COMPUTER);
-//        Company company2 = new Company("Bite","Vilnius", LAPTOP);
-//        Company company3 = new Company("Tele2","Kaunas", TV);
+        Company company1 = new Company("Telia","Klaipeda", gadget1);
+        Company company2 = new Company("Bite","Vilnius", gadget2);
+        Company company3 = new Company("Tele2","Kaunas", gadget3);
 
         Company[]companies = new Company[3];
         Company mostExpenciveGadgetCompany = companies[0];

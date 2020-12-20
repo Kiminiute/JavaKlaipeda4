@@ -1,4 +1,4 @@
-package basics.pirmiejiNamuDarbai;
+package namu_Darbai.ProgrammRunner;
 
 public class ArrayTasksExecutor {
 

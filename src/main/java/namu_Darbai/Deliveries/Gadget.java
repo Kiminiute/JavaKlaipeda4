@@ -1,11 +1,11 @@
-package basics.tdd.NamuDarbai_2.Deliveries;
+package namu_Darbai.Deliveries;
 
 public class Gadget extends Deliveries {
 
     public class Gadget {
 
         private double price;
-        private GadgetType gadgetType;
+        private  GadgetType gadgetType;
         private Courier courier;
 
         public Gadget(double price, GadgetType gadgetType, Courier courier) {
@@ -14,10 +14,14 @@ public class Gadget extends Deliveries {
             this.courier = courier;
         }
 
-        @Override
-        public double getPrice() {
-            return price;
+        public GadgetType getGadgetType() {
+            return gadgetType;
         }
+
+//        @Override
+//        public double getPrice() {
+//            return price;
+//        }
 
 
     }

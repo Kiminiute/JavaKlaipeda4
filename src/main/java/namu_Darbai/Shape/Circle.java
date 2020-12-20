@@ -1,4 +1,4 @@
-package basics.tdd.NamuDarbai_2.Shape;
+package namu_Darbai.Shape;
 
 public class Circle extends Shape {
 

@@ -1,6 +1,4 @@
-package basics.tdd.NamuDarbai_2.Deliveries;
-
-import java.util.EnumMap;
+package namu_Darbai.Deliveries;
 
 public abstract class Deliveries {
 
@@ -9,6 +7,7 @@ public abstract class Deliveries {
     public Enum type;
     public double price;
     private Gadget gadget;
+    private GadgetType gadgetType;
 
 
     public String getName() {
