@@ -4,7 +4,7 @@
 //
 //public class QueueExample {
 //    public static void main(String[] args) {
-//        Queue<String> pokemons = new PriotiryQueue<>();
+//        Queue<String> pokemons = new PriorityQueue<>();
 //
 //        pokemons.offer("Char");
 //        pokemons.offer("Pikanchu");

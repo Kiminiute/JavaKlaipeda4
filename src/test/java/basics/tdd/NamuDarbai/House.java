@@ -32,7 +32,9 @@ public class House {
     }
 
     public int getNumberOfFittedHouses(){
+
         int numberOfFittedHouses= 0;
+
         return numberOfFittedHouses;
     }
 

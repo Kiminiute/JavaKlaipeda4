@@ -13,9 +13,10 @@ public class Poem {
         this.creator = creator;
     }
 
-    public void getCreator(){
-        this.creator = creator;
-    }
+//    public void getCreator(Author creator){
+//        this.creator = creator;
+//        return Author creator;
+  //  }
 
 
     public void setStropheNumbers(int stropheNumbers) {

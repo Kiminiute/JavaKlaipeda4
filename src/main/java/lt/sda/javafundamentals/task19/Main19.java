@@ -22,7 +22,7 @@ public class Main19 {
         for (Poem poem : allPoems) {
             if (longestPoemPages < poem.getStropheNumbers()){
                 longestPoemPages = poem.getStropheNumbers();
-   //             authorWhoWroteLongestPoem = poem.getCreator();
+         //       authorWhoWroteLongestPoem = poem.getCreator(Author);
             }
         }
         System.out.println(authorWhoWroteLongestPoem + " parašė ilgiausią poemą");

@@ -8,6 +8,7 @@ import java.util.Map;
 
 public class MapExample {
     public static void main(String[] args) {
+
         Map<String, String> countries = new HashMap<>();
 
         countries.put("Poland", "Warsaw");

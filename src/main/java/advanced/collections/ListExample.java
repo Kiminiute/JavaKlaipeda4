@@ -7,6 +7,7 @@ import java.util.Set;
 
 public class ListExample {
     public static void main(String[] args) {
+
         List<String> visitedCountries = new ArrayList<>();
         visitedCountries.add("Germany");
         visitedCountries.add("Spain");
