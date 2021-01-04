@@ -6,7 +6,7 @@ public class LoopTasksExecutor {
         public void executeLoopTask1(){
         int[] array1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};                 // LOOP  1 uzduotis
         int skaicius = 8;
-        for(int i:array1) {
+        for(int i : array1) {
             int i1 = i * skaicius;
             System.out.println( i1 );
         }

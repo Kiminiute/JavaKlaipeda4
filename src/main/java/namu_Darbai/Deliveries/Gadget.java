@@ -2,27 +2,39 @@ package namu_Darbai.Deliveries;
 
 public class Gadget extends Deliveries {
 
-    public class Gadget {
+    public GadgetType gadgetType;
+    double price;
+    public Courier courier;
+    public String mostExpensiveGadget;
 
-        private double price;
-        private  GadgetType gadgetType;
-        private Courier courier;
-
-        public Gadget(double price, GadgetType gadgetType, Courier courier) {
-            this.price = price;
-            this.gadgetType = gadgetType;
-            this.courier = courier;
-        }
-
-        public GadgetType getGadgetType() {
-            return gadgetType;
-        }
-
-//        @Override
-//        public double getPrice() {
-//            return price;
-//        }
-
-
+    public Gadget(GadgetType gadgetType, double price, Courier courier){
+        this.gadgetType = gadgetType;
+        this.price = price;
+        this.courier = courier;
     }
+
+    public GadgetType getGadgetType() {
+        return gadgetType;
+    }
+
+    @Override
+    public double getPrice() {
+        return price;
+    }
+
+    public Courier getCourier() {
+        return courier;
+    }
+
+    public Gadget getMostExpensiveGadget(){
+        double maxPrice = 0;
+        Gadget mostExpensiveGadget = null;
+
+        if (maxPrice > price){
+            price = maxPrice;
+            Gadget gadget = mostExpensiveGadget;
+        }
+        return mostExpensiveGadget;
+    }
+
 }

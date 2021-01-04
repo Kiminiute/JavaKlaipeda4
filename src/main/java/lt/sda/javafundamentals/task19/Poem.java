@@ -13,11 +13,9 @@ public class Poem {
         this.creator = creator;
     }
 
-//    public void getCreator(Author creator){
-//        this.creator = creator;
-//        return Author creator;
-  //  }
-
+    public String getCreator(){
+        return creator.getSurname();
+    }
 
     public void setStropheNumbers(int stropheNumbers) {
         this.stropheNumbers = stropheNumbers;
@@ -26,4 +24,5 @@ public class Poem {
     public int getStropheNumbers() {
         return stropheNumbers;
     }
+
 }

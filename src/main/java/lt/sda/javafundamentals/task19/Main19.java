@@ -17,12 +17,12 @@ public class Main19 {
         allPoems[2] = poem3;
 
         int longestPoemPages = 0;
-        Author authorWhoWroteLongestPoem = null;
+        String authorWhoWroteLongestPoem = null;
 
         for (Poem poem : allPoems) {
             if (longestPoemPages < poem.getStropheNumbers()){
                 longestPoemPages = poem.getStropheNumbers();
-         //       authorWhoWroteLongestPoem = poem.getCreator(Author);
+                authorWhoWroteLongestPoem = poem.getCreator();
             }
         }
         System.out.println(authorWhoWroteLongestPoem + " parašė ilgiausią poemą");

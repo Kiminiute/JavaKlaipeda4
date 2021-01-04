@@ -32,26 +32,3 @@ public class Main11 {
 
 
 
-//    public static int count(){
-//
-//        int result = 0;
-//        char s = ' ';
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.println("Iveskite teksto eilute :");
-//        String text = scanner.nextLine();
-//
-//        for (int i = 0; i < text.length(); i++) {
-//            if (text.charAt(i) == s)
-//                result++;
-//        }
-//        return result;
-//    }
-//
-//    public static void main(String[] args) {
-//
-//
-//        System.out.println(count());
-
-
-
-

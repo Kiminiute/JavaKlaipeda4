@@ -17,7 +17,7 @@ public class SetExample {
             System.out.println("Lithuania is in travel route");
         }
 
-        for(String country :travelRoute){
+        for(String country : travelRoute){
             System.out.println(country);
         }
 

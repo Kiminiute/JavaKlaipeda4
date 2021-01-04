@@ -1,13 +1,14 @@
 package namu_Darbai.Deliveries;
 
 public class Company extends Deliveries {
+
     String name;
     String address;
     String mostExpensiveGadgetCompany;
     private Gadget gadget;
 
     @Override
-    public String display() {
+    public String getName() {
         return name;
     }
 
@@ -22,16 +23,20 @@ public class Company extends Deliveries {
         this.gadget = gadget;
     }
 
-//    public String getMostExpensiveGadgetCompany() {
-//        return mostExpensiveGadgetCompany;
-//    }
-
-    public void setMostExpensiveGadgetCompany(String mostExpensiveGadgetCompany) {
-        this.mostExpensiveGadgetCompany = mostExpensiveGadgetCompany;
-    }
-
     @Override
     public double getPrice() {
         return price;
     }
+
+    public Company getMostExpensiveGadgetCompany(){
+        Company mostExpensiveGadgetCompany = null;
+        Gadget gadget = null;
+
+        if (Gadget gadget = gadget.getMostExpensiveGadget()){
+            Company company = mostExpensiveGadgetCompany;
+        }
+        return mostExpensiveGadgetCompany;
+    }
+
+
 }

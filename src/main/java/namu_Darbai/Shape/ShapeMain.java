@@ -1,17 +1,19 @@
 package namu_Darbai.Shape;
 
-public class ShapeMain {
+public class ShapeMain  {
 
     public static void main(String[] args) {
 
-        Shape shape1 = new Circle(4);
-        Shape shape2 = new Rectangle(10, 10);
-        Shape shape3 = new RightAngleRectangle(5, 5);
+        Shape shape1 = new Circle ("Apskritimas", 1);
+        Shape shape2 = new Rectangle("Stačiakampis", 10, 10);
+        Shape shape3 = new RightAngleRectangle("Status trikampis", 5, 5);
 
-        System.out.println("Figuros - " + shape1.display() + " - plotas yra : " + shape1.getArea());
-        System.out.println("Figuros - " + shape1.display() + " - perimetras yra : " + shape1.getPerimeter());
-        System.out.println("Figuros - " + shape2.display() + " - plotas yra : " + shape2.getArea());
-        System.out.println("Figuros - " + shape3.display() + " - plotas yra : " + shape3.getArea());
+
+        System.out.println("Apskritimo plotas yra : " + shape1.getArea());
+        System.out.println("Apskritimo ilgis yra : " + shape1.getPerimeter());
+        System.out.println("Stačiakampio plotas yra :"  + shape2.getArea());
+        System.out.println("Stataus trikampio plotas yra : " + shape3.getArea());
+        System.out.println( );
     }
 }
 

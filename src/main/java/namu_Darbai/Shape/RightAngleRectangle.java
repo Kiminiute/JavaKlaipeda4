@@ -2,25 +2,13 @@ package namu_Darbai.Shape;
 
 public class RightAngleRectangle extends Shape {
 
-    private double width;
-    private double hight;
-    private double rightAngleRectangleArea;
-    String shapeDescription = "RightAngleRectangle";
+    protected double width;
+    protected double height;
 
-    public RightAngleRectangle(double width, double hight){     // konstruktorius;
+    public RightAngleRectangle(String shapeDescription,double width, double hight){     // konstruktorius;
+        super(shapeDescription);
         this.width = width;
-        this.hight = hight;
-    }
-
-    @Override
-    public double getArea() {
-        rightAngleRectangleArea = (width * hight) /2;           // metodas plotui
-        return rightAngleRectangleArea;
-    }
-
-    @Override
-    public String display() {
-        return shapeDescription;
+        this.height = hight;
     }
 
     public double getWidth() {
@@ -28,6 +16,17 @@ public class RightAngleRectangle extends Shape {
     }
 
     public double getHight() {
-        return hight;
+        return height;
     }
+
+    protected double getArea() {            // metodas plotui
+        return (width * height) /2;
+    }
+
+    @Override
+    protected double getPerimeter() {
+        return (double) height * width /2;
+    }
+
+
 }

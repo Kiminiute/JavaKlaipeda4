@@ -6,6 +6,7 @@ import java.util.List;
 public class AnimalMain {
 
     public  static void main(String[]args) {
+
         Cat cat = new Cat(true, "miau", "grey");
         Dog dog = new Dog(true, "whaf","Doberman");
 

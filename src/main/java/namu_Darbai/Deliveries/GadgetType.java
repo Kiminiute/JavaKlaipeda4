@@ -1,7 +1,7 @@
 package namu_Darbai.Deliveries;
 
 public enum GadgetType {
-     PHONE,
+    PHONE,
     LAPTOP,
     TV,
     PERSONAL_COMPUTER,

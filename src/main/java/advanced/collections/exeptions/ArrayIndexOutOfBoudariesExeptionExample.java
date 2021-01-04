@@ -12,7 +12,7 @@ public class ArrayIndexOutOfBoudariesExeptionExample {
         } catch (ArrayIndexOutOfBoundsException exception) {
             System.out.println("Array index is out of bounds! Array length = " + arr.length);
         }
-        System.out.println( "Programa baoge darba sekmingai");
+        System.out.println( "Programa baige darba sekmingai");
 
     }
 }

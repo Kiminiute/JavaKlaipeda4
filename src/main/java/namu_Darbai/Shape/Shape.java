@@ -6,17 +6,19 @@ public abstract class Shape {
     private double area;
     private double perimeter;
 
-
-    public String display(){
-        return  shapeDescription;
+    public Shape (String shapeDescription) {
+        this.shapeDescription = shapeDescription;
     }
 
-    public double getArea(){
-        return area;
+    public String getShapeDescription() {
+        return shapeDescription;
     }
 
-    public double getPerimeter(){
-        return perimeter;
+    protected abstract double getArea() ;
+
+
+    protected abstract double getPerimeter();
+
     }
-}
+
 

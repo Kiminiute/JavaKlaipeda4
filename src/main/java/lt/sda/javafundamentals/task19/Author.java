@@ -5,15 +5,9 @@ public class Author {
     public String nationality;
 
     public Author(String surname, String nationality){
+        this.surname = surname;
+        this.nationality = nationality;
     };
-
-    public void setAuthor(String surname){
-        surname = surname;
-    };
-    public void getAuthor(String surname){
-        surname = surname;
-    };
-
 
     public void setSurname(String surname) {
         surname = surname;
