@@ -4,7 +4,6 @@ public class Company extends Deliveries {
 
     String name;
     String address;
-    String mostExpensiveGadgetCompany;
     private Gadget gadget;
 
     @Override
@@ -28,12 +27,13 @@ public class Company extends Deliveries {
         return price;
     }
 
-    public Company getMostExpensiveGadgetCompany(){
-        Company mostExpensiveGadgetCompany = null;
-        Gadget gadget = null;
+    public Company getMostExpensiveGadgetCompany(Company company){
+        Company mostExpensiveGadgetCompany;
+        Gadget gadget;
 
-        if (Gadget gadget = gadget.getMostExpensiveGadget()){
-            Company company = mostExpensiveGadgetCompany;
+        if (Gadget gadget = gadget.getMostExpensiveGadget()) {
+            company = mostExpensiveGadgetCompany;
+            company.getName();
         }
         return mostExpensiveGadgetCompany;
     }

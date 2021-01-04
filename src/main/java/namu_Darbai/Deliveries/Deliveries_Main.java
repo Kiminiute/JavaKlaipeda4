@@ -1,10 +1,20 @@
 package namu_Darbai.Deliveries;
 import java.util.*;
-
 import static namu_Darbai.Deliveries.GadgetType.*;
 
 
 public class Deliveries_Main {
+
+    public Company getMostExpensiveGadgetCompany(Company[] companies){
+        Company mostExpensiveGadgetCompany = companies[0];
+
+        for (Company company : companies) {
+            if (company.getMostExpensiveGadgetCompany(mostExpensiveGadgetCompany) == companies[0]) {
+                company = mostExpensiveGadgetCompany;
+            }
+        }
+        return mostExpensiveGadgetCompany;
+    }
 
     public static void main(String[] args) {
 
@@ -16,25 +26,12 @@ public class Deliveries_Main {
         Company company2 = new Company("Bite", "Vilnius", new Gadget(LAPTOP, 3544, new Courier("LTPastas", "Vilnius", 2021 - 01 - 28)));
         Company company3 = new Company("Tele2", "Kaunas", new Gadget(TV, 1299, new Courier("Omniva", "Klaipeda", 2021 - 02 - 14)));
 
-        List<Company> companies = new ArrayList<>();
+        List<Company> companies = new ArrayList<>(3);
         companies.add(company1);
         companies.add(company2);
         companies.add(company3);
 
-
-        public Company getMostExpensiveGadgetCompany (Company[]companies){
-            Company mostExpensiveGadgetCompany = companies[0];
-            Company company;
-
-            for (Company c : companies) {
-                if (company.getMostExpensiveGadgetCompany() > companies[0]) {
-                    company.getName() = mostExpensiveGadgetCompany.toString();
-                }
-            }
-            return company;
-        }
-
-        System.out.println("Company, that has most expensive gadget is:  " + getMostExpensiveGadgetCompany);
+        System.out.println("Company, that has most expensive gadget is:  " + companies);
 
     }
 }
@@ -52,6 +49,7 @@ public class Deliveries_Main {
 //        * GadgetType turi talpinti tipus -> (PHONE, LAPTOP, TV, PERSONAL_COMPUTER, MICRO_CONTROLLER);
 
 //        * Inicializuoti 3 `Person` objektus. Vienas `Person` objektas privalo turėti 1-3 `Gadget` objektus;
+
 //        * Privaloma naudoti abstrakčia klasę;
 
 //        * Atvaizduoti `Company` objektą kuris turi brangiausią `Gadget` objektą;
